@@ -1,0 +1,18 @@
+﻿项目素材
+
+dist/photos/
+本次分享者选入圣诞树相册的 19 张照片，保留了相册里的标题、顺序和 JPEG 内容。
+
+dist/assets/winter-1.jpg 至 winter-6.jpg
+六幅默认相片使用内置 ImageGen 创作，按三列两行的摄影接触印样切成独立相片，用于个人相册清空后显示的备用明信片。原始生成提示如下。
+
+Generate a single professional photorealistic editorial winter photography contact sheet for the sample postcard album of a Christmas interactive art piece. Exactly three equal columns by two equal rows, full bleed, edge-to-edge, no gaps or borders, six separate square photographs. Overall landscape 3:2 aspect, 2400 x 1600 if possible. No text, labels, lettering, logos, people, frames or watermark anywhere. Each of the six photos has a distinct composition with a clear central focus, authentic 35mm film look, muted highlights, gentle grain and believable light. TOP LEFT: a single red timber cabin with amber lit windows among snow-laden pine trees, cold blue hour and soft falling snow. TOP CENTER: intimate close-up of one red glass Christmas ornament and warm fairy lights on fir needles, velvety bokeh. TOP RIGHT: a small Nordic old-town street at dusk dressed with amber Christmas string lights overhead, rich brick and deep twilight sky. BOTTOM LEFT: bold daylight landscape of jagged alpine snow-covered peaks reflecting peach dawn above blue shadowed slopes. BOTTOM CENTER: cozy close-up of a dark red mug by a frosted wooden cottage window with warm candlelight and out-of-focus winter landscape. BOTTOM RIGHT: sweeping emerald aurora borealis above a dark pine forest and frozen lake. Color-graded like a curated series of printed holiday travel photographs. The six cells must align to a strict regular rectangular grid.
+
+手部识别
+Google MediaPipe Tasks Vision 0.10.14 与 Hand Landmarker float16 v1。在浏览器本机执行。许可原文见 dist/vision/LICENSE.txt。
+https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-0.10.14.tgz
+https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+
+标题字体
+Great Vibes，SIL Open Font License 1.1。许可原文见 dist/assets/GreatVibes-OFL.txt。
+https://github.com/google/fonts/tree/main/ofl/greatvibes

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="gold">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="张开手让星光和照片散开，轻轻捏合，拾起一张冬日回忆。">
+  <title>星屑圣诞树 · Winter Orbit</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css?v=2">
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-mark" viewBox="0 0 32 32"><path d="m16 1.8 1.2 6.8 6.1-3.1-4.4 5.4 7 .7-6.3 2.9 5.3 4.6-6.9-1.4L16 25l-2-7.3-6.9 1.4 5.3-4.6-6.3-2.9 7-.7-4.4-5.4 6.1 3.1Z"/><path d="M16 25v5m-4-2h8"/></symbol>
+      <symbol id="i-album" viewBox="0 0 24 24"><rect x="5.5" y="3.5" width="15" height="15" rx="2.2"/><path d="m6 14 3.8-3.5 2.9 2.3 3.1-3.5 4.2 4.5M3 7v11a3 3 0 0 0 3 3h11"/><circle cx="10.1" cy="7.6" r=".9"/></symbol>
+      <symbol id="i-guide" viewBox="0 0 24 24"><path d="M3 5.6c3.8-1.1 6-.8 9 1.1 3-1.9 5.2-2.2 9-1.1V18c-3.8-1.1-6-.8-9 1.1-3-1.9-5.2-2.2-9-1.1Z"/><path d="M12 6.7v12"/></symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5"/></symbol>
+      <symbol id="i-hand" viewBox="0 0 24 24"><path d="M7.2 12.2V6.6a1.35 1.35 0 0 1 2.7 0v4.1-6.2a1.35 1.35 0 1 1 2.7 0v6.2-7a1.35 1.35 0 0 1 2.7 0v7.1-5a1.35 1.35 0 0 1 2.7 0v6.7l.9-2.1a1.45 1.45 0 0 1 2.7 1l-1.6 5.7c-.9 3.2-3 4.7-6.3 4.7-2.5 0-4.5-1.1-6.1-3.3l-3.7-5.2c-1.2-1.6.9-3.3 2.2-2Z"/></symbol>
+      <symbol id="i-pinch" viewBox="0 0 24 24"><path d="m7.7 15.7-2.8-3.8a3.3 3.3 0 0 1 4.4-4.8l4.4 3.1-4.1-5.3a1.4 1.4 0 0 1 2.2-1.8l5.1 5.8-2.5-3.5a1.3 1.3 0 0 1 2.1-1.5l3.8 5.4c3.4 5.4.5 12-5.7 12-2.5 0-3.8-.6-6-2.7L5 15.3c-1.3-1.3.4-3 1.8-1.9l3.3 2.6c1.4 1.1 3.1.8 4.1-.7l-5.9-6a1.4 1.4 0 0 0-2.1 1.8l2 2.6"/></symbol>
+      <symbol id="i-fist" viewBox="0 0 24 24"><path d="M5 12V8.2a1.8 1.8 0 0 1 3.6 0v3-5a1.8 1.8 0 1 1 3.6 0v5-5.8a1.8 1.8 0 1 1 3.6 0v5.8-4.1a1.8 1.8 0 1 1 3.6 0v7c0 4.9-2.2 7.1-6.9 7.1-3.3 0-5.4-1.5-7-4.6l-1.8-3.5a1.6 1.6 0 0 1 2.7-1.7l2 2.7 3.6-.4"/></symbol>
+      <symbol id="i-v" viewBox="0 0 24 24"><path d="M7.7 12 5.4 4.7c-.6-1.9 2.1-2.7 2.7-.9l3.4 8.1 2-9c.4-1.9 3.2-1.3 2.9.6l-1.1 8.2 1.1-2.4c.8-1.7 3.1-.5 2.7 1.1l-.2.9c1-1.5 3.2-.2 2.6 1.4l-1.9 5.1c-.9 2.5-3 3.9-6 3.9-2.5 0-4.3-1-6.1-3.3l-3.8-4.8c-1.2-1.6.8-3.2 2.1-2.1l3.9 3.4"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="m10 3 1.8 5.8L17 11l-5.2 2.1L10 19l-1.8-5.9L3 11l5.2-2.2Zm8.7 11.5.9 2.5 2.4 1-2.4.8-.9 2.7-.9-2.7-2.5-.8 2.5-1Z"/></symbol>
+      <symbol id="i-tree" viewBox="0 0 24 24"><path d="m12 2-5.4 7h3L4.7 15h3.4L4 19h16l-4.1-4h3.4l-4.9-6h3L12 2Zm0 17v3"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-prev" viewBox="0 0 24 24"><path d="m14.5 5.5-6 6.5 6 6.5"/></symbol>
+      <symbol id="i-next" viewBox="0 0 24 24"><path d="m9.5 5.5 6 6.5-6 6.5"/></symbol>
+      <symbol id="i-add" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+      <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="6"/><path d="M12 6v3"/></symbol>
+      <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20.5 10.5C19 8.8 16 8 12 8c-5.5 0-9.5 1.8-9.5 4S6.7 16 12 16s9.5-1.8 9.5-4M20.5 6.5v4H16"/></symbol>
+    </defs>
+  </svg>
+  <main id="experience">
+    <canvas id="sky" aria-label="可以拖动旋转的三维粒子圣诞树"></canvas>
+    <header class="topbar">
+      <div class="brand"><svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg><h1>星屑圣诞树</h1></div>
+      <nav aria-label="体验工具">
+        <button class="quiet" id="albumButton"><svg class="icon"><use href="#i-album"/></svg><span>相册</span></button>
+        <button class="quiet" id="guideButton"><svg class="icon"><use href="#i-guide"/></svg><span>玩法</span></button>
+        <span class="nav-split"></span>
+        <button id="fullButton" class="icon-button" title="全屏" aria-label="全屏"><svg class="icon"><use href="#i-expand"/></svg></button>
+      </nav>
+    </header>
+    <div class="greeting" id="greeting" aria-label="Merry Christmas">
+      <span lang="en" aria-hidden="true">Merry Christmas</span>
+      <div class="greeting-rule" aria-hidden="true"><i></i><b>✧</b><i></i></div>
+    </div>
+    <div id="handPointer" class="hand-pointer" hidden aria-hidden="true"></div>
+    <aside id="cameraView" class="camera-view" hidden aria-label="镜像手势预览">
+      <div class="camera-image"><video autoplay muted playsinline id="cameraVideo"></video><canvas id="skeleton" width="320" height="240"></canvas></div>
+      <span id="cameraStatus">寻找手掌</span>
+      <div class="camera-controls">
+        <label for="cameraSelect">摄像头</label>
+        <div class="camera-source"><select id="cameraSelect" aria-label="选择摄像头"><option value="">浏览器默认</option></select>
+          <button type="button" id="cameraRetry" title="重新连接当前摄像头">重连</button></div>
+      </div>
+      <p class="camera-advice" id="cameraAdvice" role="status" hidden></p>
+    </aside>
+    <div class="foot">
+      <div class="themes" role="group" aria-label="灯光颜色">
+        <span class="theme-label" id="themeLabel">鎏金</span>
+        <button class="swatch gold" data-color="gold" title="鎏金" aria-label="鎏金灯光" aria-pressed="true"></button>
+        <button class="swatch ice" data-color="ice" title="冰蓝" aria-label="冰蓝灯光" aria-pressed="false"></button>
+        <button class="swatch rose" data-color="rose" title="玫瑰" aria-label="玫瑰灯光" aria-pressed="false"></button>
+      </div>
+      <div class="dock" id="dock">
+        <div class="actions"><button class="primary" id="cameraButton" aria-pressed="false"><svg class="icon"><use href="#i-hand"/></svg><span>开启手势</span></button>
+          <button class="secondary" id="shapeButton"><svg class="icon"><use href="#i-spark"/></svg><span>散开星光</span></button></div>
+        <p id="actionHint">拖动旋转<span>·</span>点击相框看照片</p>
+      </div>
+      <span class="mode" id="modeStatus"><i></i><span>手动模式</span></span>
+    </div>
+  </main>
+  <div class="notice" id="notice" role="status" hidden></div>
+  <dialog class="panel" id="guide" aria-labelledby="guideTitle">
+    <div class="panel-inner"><header class="panel-head"><h2 id="guideTitle">手势玩法</h2><button class="icon-button close" data-dismiss aria-label="关闭玩法"><svg class="icon"><use href="#i-close"/></svg></button></header>
+      <p class="intro">点「开启手势」，允许摄像头，把一只手完整放进小窗。</p>
+      <details class="camera-help"><summary>预览是黑色的？</summary><p>在预览下方的「摄像头」中选择普通彩色镜头，打开镜头旁的隐私滑盖，点「重连」。如果仍然全黑，先关闭手势，再用系统的「相机」应用检查同一镜头的画面。</p></details>
+      <div class="gesture-list">
+        <div><svg class="gesture-icon"><use href="#i-hand"/></svg><p><strong>张开手掌</strong><span>让星光与照片散开，左右移手可旋转。</span></p></div>
+        <div><svg class="gesture-icon"><use href="#i-pinch"/></svg><p><strong>捏合指尖</strong><span>对准相框，拇指和食指轻捏放大，松开返回。</span></p></div>
+        <div><svg class="gesture-icon"><use href="#i-fist"/></svg><p><strong>握紧拳头</strong><span>把飘散的星光收回，重新聚成圣诞树。</span></p></div>
+        <div><svg class="gesture-icon"><use href="#i-v"/></svg><p><strong>比个 V</strong><span>停留半秒多，切换鎏金、冰蓝或玫瑰灯光。</span></p></div>
+      </div>
+      <p class="manual-note"><svg class="icon"><use href="#i-mouse"/></svg><span>鼠标和触屏也能玩。拖动旋转，用下方按钮聚散，点相框看大图。键盘空格切换聚散，方向键旋转或翻照片，Esc 返回。</span></p>
+      <p class="privacy">摄像头画面和导入的照片均在本机处理。</p>
+      <details class="mechanics"><summary>这棵树是怎么做的？</summary>
+        <p><b>树形与星空。</b>每颗光点各有一个树枝坐标和一个散开坐标。张手或握拳时，光点逐帧飞向另一组位置。灯带沿螺旋缠绕，画面随视角旋转产生远近变化。</p>
+        <p><b>手势。</b>MediaPipe 从每帧画面提取 21 个手部关键点。用手掌大小给指尖距离定标，再结合手指弯曲程度判定动作。要求动作短暂停稳，可减少误触。</p>
+        <p><b>照片。</b>相框和光点一起移动。捏合时，程序挑出距离屏幕指针最近的相框，把对应照片放大到中央。松开后回到原来的视角。</p>
+      </details>
+      <details class="credits"><summary>作品与开源许可</summary><p>默认冬日相片由 ImageGen 创作。手部识别使用 Google MediaPipe Hand Landmarker，英文字体使用 Great Vibes。</p><pre id="licenses"></pre></details>
+    </div>
+  </dialog>
+  <dialog class="panel" id="album" aria-labelledby="albumTitle">
+    <div class="panel-inner"><header class="panel-head"><h2 id="albumTitle">树上的相册</h2><button class="icon-button close" data-dismiss aria-label="关闭相册"><svg class="icon"><use href="#i-close"/></svg></button></header>
+      <p class="intro" id="albumDescription">正在载入树上的相册…</p>
+      <div class="album-grid" id="albumGrid"></div>
+      <div class="album-footer"><button class="primary" id="importButton"><svg class="icon"><use href="#i-add"/></svg><span>导入照片</span></button><span id="albumCount"></span></div>
+      <p class="privacy" id="storageHint">最多 24 张，保存在当前浏览器。</p>
+      <input id="fileInput" type="file" accept="image/*" multiple hidden>
+    </div>
+  </dialog>
+  <dialog class="viewer" id="viewer" aria-labelledby="photoTitle">
+    <div class="viewer-inner">
+      <button class="icon-button viewer-close" id="closePhoto" aria-label="返回星空" title="返回星空"><svg class="icon"><use href="#i-close"/></svg></button>
+      <figure id="print"><img id="largePhoto" alt=""><figcaption><span id="photoTitle"></span><span id="photoNumber"></span></figcaption></figure>
+      <div class="viewer-actions"><button class="icon-button" id="prevPhoto" aria-label="上一张" title="上一张"><svg class="icon"><use href="#i-prev"/></svg></button>
+        <button class="return" id="backPhoto">返回星空</button>
+        <button class="icon-button" id="nextPhoto" aria-label="下一张" title="下一张"><svg class="icon"><use href="#i-next"/></svg></button></div>
+    </div>
+  </dialog>
+  <!-- portable-assets -->
+  <script src="./assets.js"></script>
+  <script src="./packaged-album.js"></script>
+  <script src="./scene.js"></script>
+  <script src="./gestures.js?v=2"></script>
+  <script src="./album.js"></script>
+  <script src="./app.js?v=2"></script>
+</body>
+</html>
